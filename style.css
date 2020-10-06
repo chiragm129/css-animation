@@ -1,0 +1,55 @@
+.container{
+            display: flex;
+            background-color:greenyellow;
+        }
+        .box{
+            background-color:green;
+            width:250px;
+            height: 250px;
+            position: relative;
+            animation-name: chirag2;
+            animation-duration: 2s;
+            /*animation-iteration-count:3;/*3 time chlega*/
+            animation-iteration-count:3;
+            /*animation-fill-mode: forwards;/*to ki value k liye*/
+            /*animation-fill-mode:alternate;/*to tk jake 1 bar hi khtm hojayega */
+            /*animation-timing-function: ease-in;/*start slow & in end fast*/
+            /*animation-timing-function: ease-out;/*start fast & in end slow*/
+            /*animation-timing-function: ease-in-out;/*slow fast slow*/
+            /*animation-delay: 3s;/*start after 3s*/
+            /*animation-direction: alternate;/*forward*/
+            /*animation-direction: reverse;/*reverse*/
+
+            /* shorthand for animation
+            animation: name duration timing-function delay iteration-count direction fill-mode; */
+            animation: chirag2 3s ease-in 1s 3 forwards;
+        }
+        @keyframes chirag2 {
+            0%{
+                top: 0px;
+                left: 0px;
+                
+            }
+            40%{
+                top: 250px;
+                left:0px;
+            }
+            70%{
+                top:250px;
+                right:250px;
+            }
+            100%{
+                top: 0px;
+                left: 250px;
+            }
+            
+        }
+        /* @keyframes chirag1 {
+            from{
+                width: 200px;
+            }
+            to{
+                width: 1400px;
+            }
+        } */
+    
